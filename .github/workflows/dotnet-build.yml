@@ -30,7 +30,7 @@ jobs:
 
       - name: Publish
         run: |
-          dotnet publish "AUCapture-WPF\AUCapture-WPF.csproj" -p:PublishProfile=DevProfile -p:AssemblyVersion=${{ steps.previoustag.outputs.tag }}.1
+          dotnet publish "AUCapture-WPF\AUCapture-WPF.csproj" -p:PublishProfile=DevProfile
 
       - name: Relocate
         run: |
