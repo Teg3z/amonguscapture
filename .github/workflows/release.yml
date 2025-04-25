@@ -28,7 +28,7 @@ jobs:
 
       - name: Publish
         run: |
-          dotnet publish "AUCapture-WPF\AUCapture-WPF.csproj" -p:PublishProfile=PubProfile -p:AssemblyVersion=${{ github.ref_name }}.0
+          dotnet publish "AUCapture-WPF\AUCapture-WPF.csproj" -p:PublishProfile=PubProfile
 
       - name: Relocate
         run: |
